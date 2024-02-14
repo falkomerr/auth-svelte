@@ -27,11 +27,10 @@
 </script>
 
 <div
-	class="flex sm:px-20 items-center justify-center py-6 flex-col z-50 bg-transparent border border-indigo-950 sm:rounded-2xl shadow-md shadow-indigo-950 gap-5 w-full h-full sm:w-fit sm:h-fit"
+	class="z-50 flex h-full w-full flex-col items-center justify-center gap-5 border border-indigo-950 bg-transparent py-6 shadow-md shadow-indigo-950 sm:h-fit sm:w-fit sm:rounded-2xl sm:px-20"
 >
-	<div class="flex gap-1 items-center flex-col">
-		<Heading customSize="text-5xl" class="text-white text-center">SignUp</Heading>
-		<P class="text-white">to continue FalkAuth</P>
+	<div class="flex flex-col items-center gap-1">
+		<Heading customSize="text-5xl" class="text-center text-white">SignUp</Heading>
 	</div>
 	<form class="flex flex-col gap-4" on:submit={handleSubmit}>
 		<FormInput
@@ -74,9 +73,9 @@
 			placeholder="•••••••••"
 			autoComplete="new-password"
 		/>
-		<div class="w-full flex flex-col gap-2">
+		<div class="flex w-full flex-col gap-2">
 			<Button type="submit" class="w-full">SignUp</Button>
-			<Helper class="text-white text-md">Already registered? <A href="/sign-up">SigIn</A></Helper>
+			<Helper class="text-md text-white">Already registered? <A href="/sign-up">SigIn</A></Helper>
 		</div>
 	</form>
 </div>

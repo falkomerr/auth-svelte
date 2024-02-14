@@ -20,11 +20,10 @@
 </script>
 
 <div
-	class="flex sm:px-20 items-center justify-center py-6 flex-col bg-indigo-950 z-50 bg-transparent border border-indigo-950 sm:rounded-2xl shadow-md shadow-indigo-950 gap-5 w-full h-full sm:w-fit sm:h-fit"
+	class="z-50 flex h-full w-full flex-col items-center justify-center gap-5 border border-indigo-950 bg-indigo-950 bg-transparent py-6 shadow-md shadow-indigo-950 sm:h-fit sm:w-fit sm:rounded-2xl sm:px-20"
 >
-	<div class="flex gap-1 items-center flex-col">
-		<Heading customSize="text-5xl" class="text-white text-center">SignIn</Heading>
-		<P class="text-white">to continue FalkRandom</P>
+	<div class="flex flex-col items-center gap-1">
+		<Heading customSize="text-5xl" class="text-center text-white">SignIn</Heading>
 	</div>
 	<form class="flex flex-col gap-6" on:submit={handleSubmit}>
 		<FormInput
@@ -49,9 +48,9 @@
 			autoComplete="password"
 		/>
 
-		<div class="w-full flex flex-col gap-2">
+		<div class="flex w-full flex-col gap-2">
 			<Button type="submit" class="w-full">SignIn</Button>
-			<Helper class="text-white text-md">Haven't account yet? <A href="/sign-up">SigUp</A></Helper>
+			<Helper class="text-md text-white">Haven't account yet? <A href="/sign-up">SigUp</A></Helper>
 		</div>
 	</form>
 </div>
