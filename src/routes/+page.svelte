@@ -1,0 +1,10 @@
+<script>
+	import { HomePage } from '$lib/pages/home';
+</script>
+
+<svelte:head>
+	<title>Home</title>
+	<meta name="description" content="Svelte demo app" />
+</svelte:head>
+
+<HomePage />
