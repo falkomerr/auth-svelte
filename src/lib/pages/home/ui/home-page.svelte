@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Navbar } from '$lib/widgets/navbar';
-	import HomeIcon from './home-icon.svelte';
+	import { HomeIcon } from '$lib/shared/ui';
 
 	interface INavItem {
 		name: string;

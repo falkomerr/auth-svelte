@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
 	import { SignInPage } from '$lib/pages/signin';
+	import type { ActionData } from './$types';
+
+	export let form: ActionData;
 </script>
 
 <svelte:head>
@@ -7,4 +10,4 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<SignInPage />
+<SignInPage bind:action={form} />
